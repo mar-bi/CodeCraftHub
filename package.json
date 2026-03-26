@@ -1,0 +1,30 @@
+{
+  "name": "codecrafthub",
+  "version": "1.0.0",
+  "description": "Personal learning goal tracker API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "learning",
+    "courses",
+    "api",
+    "rest",
+    "express",
+    "nodejs"
+  ],
+  "author": {
+    "name": "Marina B.",
+    "url": "https://github.com/mar-bi"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
