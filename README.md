@@ -620,6 +620,7 @@ fetch("http://localhost:3000/api/courses/1", {
   .then((data) => console.log(data))
   .catch((error) => console.error("Error:", error));
 
+// Get stats
 fetch("http://localhost:3000/api/courses/stats")
   .then((response) => response.json())
   .then((data) => {
