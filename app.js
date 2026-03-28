@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const courseRoutes = require("./routes/courses");
 
 const app = express();
@@ -13,6 +14,9 @@ app.use((req, res, next) => {
   console.log(`${new Date().toISOString()} - ${req.method} ${req.path}`);
   next();
 });
+
+// Enable CORS for all routes (to run FE dashboard from a different origin)
+app.use(cors());
 
 // Routes
 app.use("/api/courses", courseRoutes);
